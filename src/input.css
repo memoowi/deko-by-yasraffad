@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchBar {
+    background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
+
+}
+
+.front-main-box {
+    background: #EBE1FF;
+}
+
+.front-main-button {
+    background: linear-gradient(90deg, #D96BFF -15.36%, #FF96E2 105.12%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-circle1 {
+    width: 304.193px;
+    height: 284.448px;
+    flex-shrink: 0;
+    border-radius: 304.193px;
+    background: #EC53B0;
+    filter: blur(211px);
+    top: 0;
+    left: 0;
+    margin-left: -49px;
+    margin-top: -104px;
+}
+
+.main-circle2 {
+    width: 608px;
+    height: 569px;
+    flex-shrink: 0;
+    border-radius: 608px;
+    background: rgba(157, 68, 192, 0.50);
+    filter: blur(211px);
+    bottom: 0;
+    right: 0;
+    margin-bottom: -157px;
+    margin-right: 106px;
+}
