@@ -578,80 +578,52 @@ video {
   position: relative;
 }
 
+.bottom-\[40px\] {
+  bottom: 40px;
+}
+
 .left-4 {
   left: 1rem;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-\[93px\] {
-  top: 93px;
 }
 
 .left-\[387px\] {
   left: 387px;
 }
 
-.top-\[130px\] {
-  top: 130px;
-}
-
-.right-\[93px\] {
-  right: 93px;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-\[40px\] {
-  bottom: 40px;
-}
-
 .left-\[86px\] {
   left: 86px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-\[310px\] {
   right: 310px;
 }
 
+.right-\[93px\] {
+  right: 93px;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-\[130px\] {
+  top: 130px;
+}
+
 .top-\[401px\] {
   top: 401px;
 }
 
+.top-\[93px\] {
+  top: 93px;
+}
+
 .z-10 {
   z-index: 10;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
-.-z-\[1\] {
-  z-index: -1;
 }
 
 .col-auto {
@@ -661,6 +633,11 @@ video {
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.my-\[41px\] {
+  margin-top: 41px;
+  margin-bottom: 41px;
 }
 
 .my-\[52px\] {
@@ -677,8 +654,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
 .mb-\[236px\] {
   margin-bottom: 236px;
+}
+
+.mb-\[41px\] {
+  margin-bottom: 41px;
 }
 
 .mb-\[60px\] {
@@ -701,12 +686,20 @@ video {
   margin-right: 1rem;
 }
 
+.mr-\[27px\] {
+  margin-right: 27px;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
 }
 
 .mt-\[102px\] {
   margin-top: 102px;
+}
+
+.mt-\[52px\] {
+  margin-top: 52px;
 }
 
 .inline {
@@ -733,12 +726,24 @@ video {
   height: 309px;
 }
 
+.h-\[75px\] {
+  height: 75px;
+}
+
 .h-\[93\%\] {
   height: 93%;
 }
 
+.w-\[228px\] {
+  width: 228px;
+}
+
 .w-\[2px\] {
   width: 2px;
+}
+
+.w-\[75px\] {
+  width: 75px;
 }
 
 .w-fit {
@@ -782,6 +787,10 @@ video {
   gap: 3.5rem;
 }
 
+.gap-\[18px\] {
+  gap: 18px;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -794,12 +803,28 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-\[17px\] {
+  border-radius: 17px;
+}
+
 .rounded-\[26px\] {
   border-radius: 26px;
 }
 
 .rounded-\[38px\] {
   border-radius: 38px;
+}
+
+.rounded-\[51px\] {
+  border-radius: 51px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
 }
 
 .border-b-\[1px\] {
@@ -809,6 +834,11 @@ video {
 .border-service {
   --tw-border-opacity: 1;
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -845,6 +875,16 @@ video {
   padding-right: 2.25rem;
 }
 
+.px-\[17px\] {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
 .px-\[43px\] {
   padding-left: 43px;
   padding-right: 43px;
@@ -863,6 +903,16 @@ video {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-\[22px\] {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .py-\[45px\] {
@@ -887,12 +937,20 @@ video {
   padding-left: 3.5rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .pr-5 {
   padding-right: 1.25rem;
 }
 
 .pr-9 {
   padding-right: 2.25rem;
+}
+
+.pr-\[17px\] {
+  padding-right: 17px;
 }
 
 .pt-5 {
@@ -914,6 +972,23 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
+}
+
+.text-\[23px\] {
+  font-size: 23px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .text-\[27px\] {
@@ -982,6 +1057,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .outline-none {
@@ -1082,6 +1161,29 @@ video:hover, video:focus {
   background: linear-gradient(180deg, #FBBDF9 0%, rgba(251, 189, 249, 0.00) 82.81%);
 }
 
+/* Profile Photo Testi */
+
+.profile-photo {
+  background-image: url("../dist/images/hikaru.jpeg");
+  background-size: 100% 178.174%;
+  background-position: 0px -16.878px;
+  background-repeat: no-repeat;
+}
+
+/* Testi Button */
+
+.testi-button {
+  background: linear-gradient(93deg, #FFB8FC -16.36%, #B5A3FF 120.53%);
+}
+
+/* Contact */
+
+.contact-box {
+  background: rgba(33, 33, 33, 0.49);
+  -webkit-backdrop-filter: blur(16.5px);
+          backdrop-filter: blur(16.5px);
+}
+
 .placeholder\:text-center::-moz-placeholder {
   text-align: center;
 }
@@ -1103,5 +1205,9 @@ video:hover, video:focus {
 @media (min-width: 1024px) {
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
   }
 }
