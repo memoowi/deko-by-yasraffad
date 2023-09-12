@@ -54,3 +54,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/* Video Carousel */
+.accordian {
+	height: 419px;
+}
