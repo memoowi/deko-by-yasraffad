@@ -72,3 +72,12 @@ video:hover, video:focus {
     transform: scale(1.35);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 }
+
+/* Service Circle Background */
+
+.service-circle4 {
+    width: 576px;
+    height: 576px;
+    border-radius: 576px;
+    background: linear-gradient(180deg, #FBBDF9 0%, rgba(251, 189, 249, 0.00) 82.81%);
+}

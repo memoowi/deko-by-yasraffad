@@ -582,21 +582,99 @@ video {
   left: 1rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-3 {
   top: 0.75rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[93px\] {
+  top: 93px;
+}
+
+.left-\[387px\] {
+  left: 387px;
+}
+
+.top-\[130px\] {
+  top: 130px;
+}
+
+.right-\[93px\] {
+  right: 93px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-\[40px\] {
+  bottom: 40px;
+}
+
+.left-\[86px\] {
+  left: 86px;
+}
+
+.right-\[310px\] {
+  right: 310px;
+}
+
+.top-\[401px\] {
+  top: 401px;
 }
 
 .z-10 {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.-z-\[1\] {
+  z-index: -1;
+}
+
 .col-auto {
   grid-column: auto;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-\[52px\] {
+  margin-top: 52px;
+  margin-bottom: 52px;
 }
 
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-\[236px\] {
@@ -613,6 +691,10 @@ video {
 
 .ml-9 {
   margin-left: 2.25rem;
+}
+
+.mr-36 {
+  margin-right: 9rem;
 }
 
 .mr-4 {
@@ -720,6 +802,15 @@ video {
   border-radius: 38px;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
+.border-service {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 212 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -762,6 +853,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .py-7 {
@@ -824,6 +920,10 @@ video {
   font-size: 27px;
 }
 
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .text-\[35px\] {
   font-size: 35px;
 }
@@ -872,6 +972,11 @@ video {
 .text-review {
   --tw-text-opacity: 1;
   color: rgb(144 144 144 / var(--tw-text-opacity));
+}
+
+.text-service {
+  --tw-text-opacity: 1;
+  color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -966,6 +1071,15 @@ video::-webkit-media-controls {
 video:hover, video:focus {
   transform: scale(1.35);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Service Circle Background */
+
+.service-circle4 {
+  width: 576px;
+  height: 576px;
+  border-radius: 576px;
+  background: linear-gradient(180deg, #FBBDF9 0%, rgba(251, 189, 249, 0.00) 82.81%);
 }
 
 .placeholder\:text-center::-moz-placeholder {

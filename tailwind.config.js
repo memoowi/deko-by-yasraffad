@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         review: '#909090',
+        service: '#D4D4D4',
       }
     },
   },
