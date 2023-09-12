@@ -586,20 +586,12 @@ video {
   top: 0.75rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
 
-.z-30 {
-  z-index: 30;
+.col-auto {
+  grid-column: auto;
 }
 
 .my-auto {
@@ -643,6 +635,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -678,6 +674,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 
 .flex-wrap {
@@ -730,17 +730,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
 }
 
 .px-10 {
@@ -961,6 +952,20 @@ body {
 
 .accordian {
   height: 419px;
+}
+
+video {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+video::-webkit-media-controls {
+  opacity: 0;
+}
+
+video:hover, video:focus {
+  transform: scale(1.35);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 .placeholder\:text-center::-moz-placeholder {

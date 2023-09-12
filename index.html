@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEKO</title>
+    <link rel="shortcut icon" href="dist/images/icon.png" type="image/x-icon">
     <link href="dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -173,20 +174,26 @@
             <div class="w-full">
                 <!-- here -->
                 <div class="accordian flex items-center">
-                    <ul class="flex">
-                        <li>
-                            <div>
-                                <video src="" poster="dist/images/preview/p1.png" class="h-[309px]" preload="none" controls></video>
+                    <ul class="grid grid-flow-col">
+                        <li class="col-auto">
+                            <div class="h-[309px]">
+                                <video preload="metadata" controls loop poster="dist/images/preview/p1.png">
+                                    <source src="dist/video/v1.mov">
+                                </video>
                             </div>
                         </li>
-                        <li>
-                            <div>
-                                <video src="" poster="dist/images/preview/p2.png" class="h-[309px]" preload="none" controls></video>
+                        <li class="col-auto">
+                            <div class="h-[309px]">
+                                <video preload="metadata" controls loop poster="dist/images/preview/p2.png">
+                                    <source src="dist/video/v2.mov">
+                                </video>
                             </div>
                         </li>
-                        <li>
-                            <div>
-                                <video src="" poster="dist/images/preview/p3.png" class="h-[309px]" preload="none" controls></video>
+                        <li class="col-auto">
+                            <div class="h-[309px]">
+                                <video preload="metadata" controls loop poster="dist/images/preview/p3.png">
+                                    <source src="dist/video/v3.mov">
+                                </video>
                             </div>
                         </li>
                     </ul>

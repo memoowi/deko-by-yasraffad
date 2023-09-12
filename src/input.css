@@ -60,3 +60,15 @@ body {
 .accordian {
 	height: 419px;
 }
+
+video {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+video::-webkit-media-controls {
+    opacity: 0;
+  }
+video:hover, video:focus {
+    transform: scale(1.35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+}
