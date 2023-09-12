@@ -47,3 +47,10 @@ body {
     margin-bottom: -157px;
     margin-right: 106px;
 }
+
+.title-preview {
+    background: linear-gradient(90deg, #DDA7EB 8.77%, #D4BCFC 151.86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
