@@ -654,6 +654,10 @@ video {
   z-index: 30;
 }
 
+.-order-1 {
+  order: -1;
+}
+
 .col-auto {
   grid-column: auto;
 }
@@ -681,6 +685,14 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-7 {
@@ -715,10 +727,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-9 {
-  margin-left: 2.25rem;
-}
-
 .mr-4 {
   margin-right: 1rem;
 }
@@ -729,6 +737,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-7 {
@@ -779,6 +791,11 @@ video {
   height: 93%;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-\[2px\] {
   width: 2px;
 }
@@ -804,12 +821,28 @@ video {
   flex-shrink: 0;
 }
 
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.origin-bottom-left {
+  transform-origin: bottom left;
+}
+
+.origin-top-left {
+  transform-origin: top left;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-flow-row {
   grid-auto-flow: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -846,6 +879,10 @@ video {
 
 .gap-\[18px\] {
   gap: 18px;
+}
+
+.gap-\[37px\] {
+  gap: 37px;
 }
 
 .gap-\[9px\] {
@@ -1009,12 +1046,14 @@ video {
   padding-bottom: 52px;
 }
 
-.pb-4 {
+.py-4 {
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.pb-\[52px\] {
-  padding-bottom: 52px;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pl-14 {
@@ -1035,14 +1074,6 @@ video {
 
 .pr-\[17px\] {
   padding-right: 17px;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-\[52px\] {
-  padding-top: 52px;
 }
 
 .text-center {
@@ -1206,6 +1237,14 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -1213,6 +1252,135 @@ body {
 .searchBar {
   background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
 }
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  width: 60%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  flex-direction: column;
+  z-index: 99;
+  transform: translateX(100%);
+  transition: 0.2s ease-in-out;
+  background: rgba(235, 225, 255, 0.5);
+  -webkit-backdrop-filter: blur(16.5px);
+          backdrop-filter: blur(16.5px);
+}
+
+nav ul {
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+/* Burger */
+
+.burger .line-1 {
+  z-index: 99;
+  margin: 7px;
+  height: 4px;
+  width: 34px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
+}
+
+.burger .line-2 {
+  z-index: 99;
+  margin: 7px;
+  margin-left: 17px;
+  height: 4px;
+  width: 24px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
+}
+
+.burger .line-3 {
+  z-index: 99;
+  margin: 7px;
+  margin-left: 27px;
+  height: 4px;
+  width: 14px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
+}
+
+.burger {
+  position: fixed;
+  top: 55px;
+  right: 35px;
+  z-index: 99;
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+}
+
+.toggle-burger .line-1 {
+  transform: rotate(45deg);
+}
+
+.toggle-burger .line-2 {
+  opacity: 0;
+}
+
+.toggle-burger .line-3 {
+  width: 34px;
+  margin-left: 7px;
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+}
+
+/* DropDown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: -36px;
+  background: linear-gradient(90deg, #f0e0f5 8.77%, #e7e1f1 151.86%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  z-index: 20;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #faf7ff;
+  border-radius: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Front */
 
 .front-main-box {
   background: #EBE1FF;
@@ -1383,12 +1551,41 @@ video:hover, video:focus {
 }
 
 @media (min-width: 1024px) {
+  .lg\:static {
+    position: static;
+  }
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:ml-9 {
+    margin-left: 2.25rem;
+  }
+
   .lg\:mr-36 {
     margin-right: 9rem;
   }
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
   }
 
   .lg\:h-\[309px\] {
@@ -1407,8 +1604,21 @@ video:hover, video:focus {
     width: 40%;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:grid-flow-col {
     grid-auto-flow: column;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:justify-start {
@@ -1419,6 +1629,10 @@ video:hover, video:focus {
     justify-content: flex-end;
   }
 
+  .lg\:gap-\[2vw\] {
+    gap: 2vw;
+  }
+
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1427,10 +1641,24 @@ video:hover, video:focus {
   .lg\:pl-14 {
     padding-left: 3.5rem;
   }
+
+  .lg\:text-start {
+    text-align: start;
+  }
 }
 
 @media (min-width: 1280px) {
   .xl\:w-2\/5 {
     width: 40%;
+  }
+
+  .xl\:gap-\[8vw\] {
+    gap: 8vw;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:gap-\[15vw\] {
+    gap: 15vw;
   }
 }

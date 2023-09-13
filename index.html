@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="flex items-center pt-[52px] pb-4">
-        <div class="container font-inter">
-            <div class="flex items-center justify-between">
+    <header class="flex items-center py-[52px]">
+        <div class="container flex flex-col gap-[37px]">
+            <div class="flex items-center justify-between font-inter">
                 <div>
                     <div class="font-teko text-[35px] tracking-[9.275px]">
                         <a href="" class="flex items-center">
@@ -28,101 +28,94 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center items-center">
-                    <button>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <nav>
-                        <ul class="flex gap-14">
-                            <li>
-                                <a href="" class="text-navi">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="text-navi">
-                                    Preview
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="text-navi">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="text-navi">
-                                    Testimonial
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="flex items-center">
-                    <div class="relative text-navi">
-                        <a href="" role="button">
-                            Login
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none" class="inline ml-2">
-                                <path d="M12.8293 0.955659L12.8293 0.955671L7.50006 5.46537L2.17081 0.955671L2.1708 0.95566C2.01106 0.820505 1.80212 0.75 1.59127 0.75C1.38042 0.75 1.17148 0.820505 1.01174 0.95566L1.01174 0.95566C0.850743 1.09188 0.750061 1.28648 0.750061 1.50022C0.750061 1.71396 0.850743 1.90856 1.01174 2.04478L6.92043 7.04414C6.92046 7.04417 6.9205 7.0442 6.92053 7.04422C7 7.11151 7.0922 7.16313 7.19105 7.1978C7.28994 7.23249 7.39485 7.25 7.50006 7.25C7.60527 7.25 7.71018 7.23249 7.80908 7.1978C7.90792 7.16313 8.00013 7.11151 8.07959 7.04422C8.07962 7.0442 8.07966 7.04417 8.07969 7.04414L13.9884 2.04479C14.0679 1.97746 14.1337 1.89527 14.1796 1.80157C14.2256 1.70768 14.2501 1.60513 14.2501 1.50022C14.2501 1.39532 14.2256 1.29277 14.1796 1.19887L13.9551 1.3088L14.1796 1.19887C14.1337 1.10517 14.0679 1.02298 13.9884 0.95566C13.9089 0.888397 13.8166 0.836796 13.7178 0.802148C13.6189 0.767495 13.514 0.75 13.4089 0.75C13.3037 0.75 13.1988 0.767495 13.0999 0.802147C13.0011 0.836797 12.9088 0.888398 12.8293 0.955659Z" fill="black" stroke="black" stroke-width="0.5"/>
-                            </svg>
-                        </a>
-                        <ul class="hidden absolute z-10">
-                            <li>
-                                <a href="">Login</a>
-                            </li>
-                            <li>
-                                <a href="">Signup</a>
-                            </li>
-                        </ul>
+                <nav class="items-center flex lg:flex-row lg:static lg:h-0 lg:w-auto lg:translate-x-0 lg:gap-[2vw] xl:gap-[8vw] 2xl:gap-[15vw]">
+                    <ul class="flex gap-14 lg:flex-row">
+                        <li>
+                            <a href="" class="text-navi">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-navi">
+                                Preview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-navi">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-navi">
+                                Testimonial
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex flex-col lg:flex-row items-center -order-1 lg:order-1 mt-36 mb-14 lg:my-0">
+                        <div class="text-navi dropdown mb-10 lg:mb-0">
+                            <a href="" role="button" class="dropbtn">
+                                Login
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none" class="inline ml-2">
+                                    <path d="M12.8293 0.955659L12.8293 0.955671L7.50006 5.46537L2.17081 0.955671L2.1708 0.95566C2.01106 0.820505 1.80212 0.75 1.59127 0.75C1.38042 0.75 1.17148 0.820505 1.01174 0.95566L1.01174 0.95566C0.850743 1.09188 0.750061 1.28648 0.750061 1.50022C0.750061 1.71396 0.850743 1.90856 1.01174 2.04478L6.92043 7.04414C6.92046 7.04417 6.9205 7.0442 6.92053 7.04422C7 7.11151 7.0922 7.16313 7.19105 7.1978C7.28994 7.23249 7.39485 7.25 7.50006 7.25C7.60527 7.25 7.71018 7.23249 7.80908 7.1978C7.90792 7.16313 8.00013 7.11151 8.07959 7.04422C8.07962 7.0442 8.07966 7.04417 8.07969 7.04414L13.9884 2.04479C14.0679 1.97746 14.1337 1.89527 14.1796 1.80157C14.2256 1.70768 14.2501 1.60513 14.2501 1.50022C14.2501 1.39532 14.2256 1.29277 14.1796 1.19887L13.9551 1.3088L14.1796 1.19887C14.1337 1.10517 14.0679 1.02298 13.9884 0.95566C13.9089 0.888397 13.8166 0.836796 13.7178 0.802148C13.6189 0.767495 13.514 0.75 13.4089 0.75C13.3037 0.75 13.1988 0.767495 13.0999 0.802147C13.0011 0.836797 12.9088 0.888398 12.8293 0.955659Z" fill="black" stroke="black" stroke-width="0.5"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-content h-fit">
+                                <li>
+                                    <a href="">Login</a>
+                                </li>
+                                <li>
+                                    <a href="">Signup</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <form role="search" class="text-navi lg:ml-9 relative">
+                            <i class="absolute top-3 left-4 z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                    <path d="M23.3249 22.1751L18.2397 17.0909C19.7136 15.3214 20.4485 13.0518 20.2917 10.7542C20.1348 8.45657 19.0982 6.30789 17.3974 4.75512C15.6967 3.20234 13.4628 2.36503 11.1605 2.41735C8.85809 2.46968 6.66454 3.40761 5.03611 5.03605C3.40767 6.66448 2.46974 8.85803 2.41741 11.1604C2.36509 13.4627 3.2024 15.6967 4.75518 17.3974C6.30795 19.0981 8.45663 20.1347 10.7542 20.2916C13.0518 20.4485 15.3215 19.7135 17.091 18.2396L22.1752 23.3248C22.2507 23.4003 22.3403 23.4602 22.4389 23.5011C22.5376 23.5419 22.6433 23.5629 22.75 23.5629C22.8568 23.5629 22.9625 23.5419 23.0612 23.5011C23.1598 23.4602 23.2494 23.4003 23.3249 23.3248C23.4004 23.2493 23.4603 23.1597 23.5011 23.0611C23.542 22.9625 23.563 22.8567 23.563 22.75C23.563 22.6432 23.542 22.5375 23.5011 22.4389C23.4603 22.3403 23.4004 22.2506 23.3249 22.1751ZM4.06255 11.375C4.06255 9.92871 4.49142 8.51491 5.29493 7.31238C6.09843 6.10985 7.24049 5.17258 8.57668 4.61912C9.91286 4.06565 11.3832 3.92084 12.8016 4.203C14.2201 4.48515 15.5231 5.1816 16.5458 6.20427C17.5684 7.22694 18.2649 8.5299 18.547 9.94839C18.8292 11.3669 18.6844 12.8372 18.1309 14.1734C17.5775 15.5095 16.6402 16.6516 15.4377 17.4551C14.2351 18.2586 12.8213 18.6875 11.375 18.6875C9.43631 18.6853 7.5776 17.9142 6.20671 16.5433C4.83581 15.1724 4.0647 13.3137 4.06255 11.375Z" fill="white"/>
+                                </svg>
+                            </i>
+                            <input type="search" placeholder="Search"  class="max-w-[188px] rounded-[38px] py-2 pl-14 pr-5 outline-none text-white backdrop-blur-md placeholder:text-white placeholder:text-center searchBar">
+                        </form>
                     </div>
-                    <form role="search" class="text-navi ml-9 relative">
-                        <i class="absolute top-3 left-4 z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                                <path d="M23.3249 22.1751L18.2397 17.0909C19.7136 15.3214 20.4485 13.0518 20.2917 10.7542C20.1348 8.45657 19.0982 6.30789 17.3974 4.75512C15.6967 3.20234 13.4628 2.36503 11.1605 2.41735C8.85809 2.46968 6.66454 3.40761 5.03611 5.03605C3.40767 6.66448 2.46974 8.85803 2.41741 11.1604C2.36509 13.4627 3.2024 15.6967 4.75518 17.3974C6.30795 19.0981 8.45663 20.1347 10.7542 20.2916C13.0518 20.4485 15.3215 19.7135 17.091 18.2396L22.1752 23.3248C22.2507 23.4003 22.3403 23.4602 22.4389 23.5011C22.5376 23.5419 22.6433 23.5629 22.75 23.5629C22.8568 23.5629 22.9625 23.5419 23.0612 23.5011C23.1598 23.4602 23.2494 23.4003 23.3249 23.3248C23.4004 23.2493 23.4603 23.1597 23.5011 23.0611C23.542 22.9625 23.563 22.8567 23.563 22.75C23.563 22.6432 23.542 22.5375 23.5011 22.4389C23.4603 22.3403 23.4004 22.2506 23.3249 22.1751ZM4.06255 11.375C4.06255 9.92871 4.49142 8.51491 5.29493 7.31238C6.09843 6.10985 7.24049 5.17258 8.57668 4.61912C9.91286 4.06565 11.3832 3.92084 12.8016 4.203C14.2201 4.48515 15.5231 5.1816 16.5458 6.20427C17.5684 7.22694 18.2649 8.5299 18.547 9.94839C18.8292 11.3669 18.6844 12.8372 18.1309 14.1734C17.5775 15.5095 16.6402 16.6516 15.4377 17.4551C14.2351 18.2586 12.8213 18.6875 11.375 18.6875C9.43631 18.6853 7.5776 17.9142 6.20671 16.5433C4.83581 15.1724 4.0647 13.3137 4.06255 11.375Z" fill="white"/>
-                            </svg>
-                        </i>
-                        <input type="search" placeholder="Search"  class="max-w-[188px] rounded-[38px] py-2 pl-14 pr-5 outline-none text-white backdrop-blur-md placeholder:text-white placeholder:text-center searchBar">
-                    </form>
+                </nav>
+                <div class="burger">
+                    <div class="line-1 origin-top-left"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
                 </div>
             </div>
+            <section id="home">
+                <div class="flex flex-wrap rounded-[26px] overflow-hidden front-main-box relative">
+                    <div class="w-full self-end px-[43px] py-[45px] z-10 lg:w-1/2">
+                        <div class="mb-[236px]">
+                            <h1 class="text-title leading-[63px]">
+                                We Help You To<br>Make A <span class="font-bold">Dream Home</span>
+                            </h1>
+                            <p class="text-xl mt-7">
+                                Trusted Source Of Bulid Your Home
+                            </p>
+                        </div>
+                        <a href="" class="block w-fit py-7 px-9 rounded-3xl backdrop-blur-xl bg-white bg-opacity-60">
+                            <span class="text-2xl font-semibold leading-6 front-main-button">
+                                Start and Explore now
+                            </span>
+                        </a>
+                    </div>
+                    <div class="w-full self-end mt-[102px] z-10 lg:w-1/2">
+                        <img src="dist/images/1.png" alt="Building images" class="w-full">
+                    </div>
+                    <div class="absolute main-circle1"></div>
+                    <div class="absolute main-circle2"></div>
+                </div>
+            </section>
         </div>
     </header>
     <!-- End of Header -->
 
-    <!-- Front -->
-    <section id="home" class="pt-5 pb-[52px]">
-        <div class="container">
-            <div class="flex flex-wrap rounded-[26px] overflow-hidden front-main-box relative">
-                <div class="w-full self-end px-[43px] py-[45px] z-10 lg:w-1/2">
-                    <div class="mb-[236px]">
-                        <h1 class="text-title leading-[63px]">
-                            We Help You To<br>Make A <span class="font-bold">Dream Home</span>
-                        </h1>
-                        <p class="text-xl mt-7">
-                            Trusted Source Of Bulid Your Home
-                        </p>
-                    </div>
-                    <a href="" class="block w-fit py-7 px-9 rounded-3xl backdrop-blur-xl bg-white bg-opacity-60">
-                        <span class="text-2xl font-semibold leading-6 front-main-button">
-                            Start and Explore now
-                        </span>
-                    </a>
-                </div>
-                <div class="w-full self-end mt-[102px] z-10 lg:w-1/2">
-                    <img src="dist/images/1.png" alt="Building images" class="w-full">
-                </div>
-                <div class="absolute main-circle1"></div>
-                <div class="absolute main-circle2"></div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Front -->
-
     <!-- Review -->
     <section class="py-[52px]">
         <div class="container px-10">
-            <div class="flex flex-wrap justify-between">
+            <div class="text-center lg:text-start lg:flex flex-wrap justify-between">
                 <div class="px-4">
                     <h5 class="text-[57px] font-medium">
                         1,000,000
@@ -131,7 +124,7 @@
                         Happy Users
                     </p>
                 </div>
-                <div class="line flex items-center">
+                <div class="line flex items-center py-3 lg:py-0">
                     <div class="w-[2px] h-[93%] bg-black"></div>
                 </div>
                 <div class="px-4">
@@ -142,7 +135,7 @@
                         Reserved Land
                     </p>
                 </div>
-                <div class="line flex items-center">
+                <div class="line flex items-center  py-3 lg:py-0">
                     <div class="w-[2px] h-[93%] bg-black"></div>
                 </div>
                 <div class="px-4">
@@ -213,24 +206,24 @@
                         <h2 class="text-title font-bold title-preview mb-8">
                             Services
                         </h2>
-                        <div class="text-service text-[28px] font-medium flex justify-between items-center py-7 border-b-[1px] border-service">
+                        <a href="" class="text-service text-[28px] font-medium flex justify-between items-center py-7 border-b-[1px] border-service">
                             <p>Architecture</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none" class="flex-shrink-0">
                                 <path d="M28.5 0C22.8632 0 17.3531 1.6715 12.6663 4.80312C7.97946 7.93473 4.32654 12.3858 2.16945 17.5935C0.0123486 22.8012 -0.552046 28.5316 0.547632 34.0601C1.64731 39.5885 4.36167 44.6667 8.34747 48.6525C12.3333 52.6383 17.4115 55.3527 22.9399 56.4524C28.4684 57.552 34.1988 56.9877 39.4065 54.8306C44.6142 52.6735 49.0653 49.0205 52.1969 44.3337C55.3285 39.6469 57 34.1368 57 28.5C56.992 20.9438 53.9868 13.6993 48.6437 8.35627C43.3007 3.01321 36.0562 0.0079795 28.5 0ZM39.4615 32.8846C39.4615 33.466 39.2306 34.0237 38.8194 34.4348C38.4083 34.8459 37.8507 35.0769 37.2692 35.0769C36.6878 35.0769 36.1302 34.8459 35.719 34.4348C35.3079 34.0237 35.0769 33.466 35.0769 32.8846V25.0224L21.2818 38.8203C21.0781 39.024 20.8363 39.1855 20.5702 39.2958C20.3041 39.406 20.0188 39.4627 19.7308 39.4627C19.4427 39.4627 19.1575 39.406 18.8914 39.2958C18.6252 39.1855 18.3834 39.024 18.1797 38.8203C17.976 38.6166 17.8145 38.3748 17.7042 38.1087C17.594 37.8425 17.5373 37.5573 17.5373 37.2692C17.5373 36.9812 17.594 36.6959 17.7042 36.4298C17.8145 36.1637 17.976 35.9219 18.1797 35.7182L31.9776 21.9231H24.1154C23.534 21.9231 22.9763 21.6921 22.5652 21.281C22.1541 20.8698 21.9231 20.3122 21.9231 19.7308C21.9231 19.1493 22.1541 18.5917 22.5652 18.1806C22.9763 17.7694 23.534 17.5385 24.1154 17.5385H37.2692C37.8507 17.5385 38.4083 17.7694 38.8194 18.1806C39.2306 18.5917 39.4615 19.1493 39.4615 19.7308V32.8846Z" fill="#D4D4D4"/>
                             </svg>
-                        </div>
-                        <div class="text-service text-[28px] font-medium flex justify-between items-center py-7 border-b-[1px] border-service">
+                        </a>
+                        <a href="" class="text-service text-[28px] font-medium flex justify-between items-center py-7 border-b-[1px] border-service">
                             <p>Interior</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none" class="flex-shrink-0">
                                 <path d="M28.5 0C22.8632 0 17.3531 1.6715 12.6663 4.80312C7.97946 7.93473 4.32654 12.3858 2.16945 17.5935C0.0123486 22.8012 -0.552046 28.5316 0.547632 34.0601C1.64731 39.5885 4.36167 44.6667 8.34747 48.6525C12.3333 52.6383 17.4115 55.3527 22.9399 56.4524C28.4684 57.552 34.1988 56.9877 39.4065 54.8306C44.6142 52.6735 49.0653 49.0205 52.1969 44.3337C55.3285 39.6469 57 34.1368 57 28.5C56.992 20.9438 53.9868 13.6993 48.6437 8.35627C43.3007 3.01321 36.0562 0.0079795 28.5 0ZM39.4615 32.8846C39.4615 33.466 39.2306 34.0237 38.8194 34.4348C38.4083 34.8459 37.8507 35.0769 37.2692 35.0769C36.6878 35.0769 36.1302 34.8459 35.719 34.4348C35.3079 34.0237 35.0769 33.466 35.0769 32.8846V25.0224L21.2818 38.8203C21.0781 39.024 20.8363 39.1855 20.5702 39.2958C20.3041 39.406 20.0188 39.4627 19.7308 39.4627C19.4427 39.4627 19.1575 39.406 18.8914 39.2958C18.6252 39.1855 18.3834 39.024 18.1797 38.8203C17.976 38.6166 17.8145 38.3748 17.7042 38.1087C17.594 37.8425 17.5373 37.5573 17.5373 37.2692C17.5373 36.9812 17.594 36.6959 17.7042 36.4298C17.8145 36.1637 17.976 35.9219 18.1797 35.7182L31.9776 21.9231H24.1154C23.534 21.9231 22.9763 21.6921 22.5652 21.281C22.1541 20.8698 21.9231 20.3122 21.9231 19.7308C21.9231 19.1493 22.1541 18.5917 22.5652 18.1806C22.9763 17.7694 23.534 17.5385 24.1154 17.5385H37.2692C37.8507 17.5385 38.4083 17.7694 38.8194 18.1806C39.2306 18.5917 39.4615 19.1493 39.4615 19.7308V32.8846Z" fill="#D4D4D4"/>
                             </svg>
-                        </div>
-                        <div class="text-service text-[28px] font-medium flex justify-between items-center py-7 border-b-[1px] border-service">
+                        </a>
+                        <a href="" class="text-service text-[28px] font-medium flex justify-between items-center py-7 border-b-[1px] border-service">
                             <p>Sell A Home</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none" class="flex-shrink-0">
                                 <path d="M28.5 0C22.8632 0 17.3531 1.6715 12.6663 4.80312C7.97946 7.93473 4.32654 12.3858 2.16945 17.5935C0.0123486 22.8012 -0.552046 28.5316 0.547632 34.0601C1.64731 39.5885 4.36167 44.6667 8.34747 48.6525C12.3333 52.6383 17.4115 55.3527 22.9399 56.4524C28.4684 57.552 34.1988 56.9877 39.4065 54.8306C44.6142 52.6735 49.0653 49.0205 52.1969 44.3337C55.3285 39.6469 57 34.1368 57 28.5C56.992 20.9438 53.9868 13.6993 48.6437 8.35627C43.3007 3.01321 36.0562 0.0079795 28.5 0ZM39.4615 32.8846C39.4615 33.466 39.2306 34.0237 38.8194 34.4348C38.4083 34.8459 37.8507 35.0769 37.2692 35.0769C36.6878 35.0769 36.1302 34.8459 35.719 34.4348C35.3079 34.0237 35.0769 33.466 35.0769 32.8846V25.0224L21.2818 38.8203C21.0781 39.024 20.8363 39.1855 20.5702 39.2958C20.3041 39.406 20.0188 39.4627 19.7308 39.4627C19.4427 39.4627 19.1575 39.406 18.8914 39.2958C18.6252 39.1855 18.3834 39.024 18.1797 38.8203C17.976 38.6166 17.8145 38.3748 17.7042 38.1087C17.594 37.8425 17.5373 37.5573 17.5373 37.2692C17.5373 36.9812 17.594 36.6959 17.7042 36.4298C17.8145 36.1637 17.976 35.9219 18.1797 35.7182L31.9776 21.9231H24.1154C23.534 21.9231 22.9763 21.6921 22.5652 21.281C22.1541 20.8698 21.9231 20.3122 21.9231 19.7308C21.9231 19.1493 22.1541 18.5917 22.5652 18.1806C22.9763 17.7694 23.534 17.5385 24.1154 17.5385H37.2692C37.8507 17.5385 38.4083 17.7694 38.8194 18.1806C39.2306 18.5917 39.4615 19.1493 39.4615 19.7308V32.8846Z" fill="#D4D4D4"/>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="hidden lg:w-1/2 lg:block z-10">
@@ -436,7 +429,7 @@
         <div class="container px-14">
             <div class="flex flex-wrap font-teko">
                 <div class="w-full lg:w-1/3 flex gap-8 items-center justify-center lg:justify-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none" class="shrink-0">
                         <path d="M44.4885 75.183C41.1766 77.0951 37.0963 77.0951 33.7845 75.183L10.5953 61.7947C7.28345 59.8826 5.24328 56.3489 5.24328 52.5248V25.7482C5.24328 21.924 7.28345 18.3903 10.5953 16.4783L33.7845 3.08997C37.0963 1.17788 41.1766 1.17788 44.4885 3.08997L67.6777 16.4783C70.9895 18.3903 73.0297 21.924 73.0297 25.7482V52.5248C73.0297 56.3489 70.9895 59.8826 67.6777 61.7947L44.4885 75.183Z" fill="black"/>
                         <path d="M62.2171 45.0718L37.9644 31.0695C36.357 30.1415 35.054 27.8846 35.054 26.0286L35.054 18.7474C35.054 16.8914 36.357 16.1391 37.9644 17.0671L59.3068 29.3892C60.9141 30.3172 62.2171 32.574 62.2171 34.43L62.2171 45.0718Z" fill="#54ECB5"/>
                         <circle cx="25.7565" cy="39.1364" r="9.0315" transform="rotate(-180 25.7565 39.1364)" fill="#FF5858"/>
@@ -447,7 +440,7 @@
                     </h2>
                 </div>
                 <div class="w-full lg:w-1/3 flex justify-center items-center py-6 lg:py-0">
-                    <p class="text-[38px]">
+                    <p class="text-[38px] text-center">
                         FOLLOW US ON SOCIAL MEDIA
                     </p>
                 </div>
