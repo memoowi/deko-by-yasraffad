@@ -779,10 +779,6 @@ video {
   height: 93%;
 }
 
-.w-\[228px\] {
-  width: 228px;
-}
-
 .w-\[2px\] {
   width: 2px;
 }
@@ -840,6 +836,10 @@ video {
   gap: 3.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -850,22 +850,6 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .self-end {
@@ -1210,6 +1194,18 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -1370,6 +1366,16 @@ video:hover, video:focus {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#B5A3FF\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(181 163 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#FFB8FC\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 184 252 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -1383,10 +1389,6 @@ video:hover, video:focus {
 
   .lg\:block {
     display: block;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:h-\[309px\] {
