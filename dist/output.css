@@ -771,10 +771,6 @@ video {
   height: 2px;
 }
 
-.h-\[309px\] {
-  height: 309px;
-}
-
 .h-\[75px\] {
   height: 75px;
 }
@@ -854,6 +850,22 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .self-end {
@@ -1359,8 +1371,8 @@ video:hover, video:focus {
 }
 
 @media (min-width: 768px) {
-  .md\:grid-flow-col {
-    grid-auto-flow: column;
+  .md\:flex {
+    display: flex;
   }
 }
 
@@ -1371,6 +1383,10 @@ video:hover, video:focus {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-\[309px\] {
@@ -1412,7 +1428,7 @@ video:hover, video:focus {
 }
 
 @media (min-width: 1280px) {
-  .xl\:grid-flow-col {
-    grid-auto-flow: column;
+  .xl\:w-2\/5 {
+    width: 40%;
   }
 }
