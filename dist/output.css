@@ -578,6 +578,14 @@ video {
   position: relative;
 }
 
+.bottom-\[189px\] {
+  bottom: 189px;
+}
+
+.bottom-\[22px\] {
+  bottom: 22px;
+}
+
 .bottom-\[40px\] {
   bottom: 40px;
 }
@@ -590,12 +598,20 @@ video {
   left: 387px;
 }
 
+.left-\[618px\] {
+  left: 618px;
+}
+
 .left-\[86px\] {
   left: 86px;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.right-\[181px\] {
+  right: 181px;
 }
 
 .right-\[310px\] {
@@ -614,6 +630,10 @@ video {
   top: 130px;
 }
 
+.top-\[154px\] {
+  top: 154px;
+}
+
 .top-\[401px\] {
   top: 401px;
 }
@@ -626,8 +646,16 @@ video {
   z-index: 10;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .col-auto {
   grid-column: auto;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .my-16 {
@@ -650,6 +678,15 @@ video {
   margin-bottom: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -660,6 +697,10 @@ video {
 
 .mb-\[236px\] {
   margin-bottom: 236px;
+}
+
+.mb-\[39px\] {
+  margin-bottom: 39px;
 }
 
 .mb-\[41px\] {
@@ -690,6 +731,10 @@ video {
   margin-right: 27px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -700,6 +745,14 @@ video {
 
 .mt-\[52px\] {
   margin-top: 52px;
+}
+
+.mt-\[59px\] {
+  margin-top: 59px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .inline {
@@ -783,12 +836,24 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-14 {
   gap: 3.5rem;
 }
 
 .gap-\[18px\] {
   gap: 18px;
+}
+
+.gap-\[9px\] {
+  gap: 9px;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .self-end {
@@ -817,6 +882,10 @@ video {
 
 .rounded-\[51px\] {
   border-radius: 51px;
+}
+
+.rounded-\[55px\] {
+  border-radius: 55px;
 }
 
 .rounded-full {
@@ -855,6 +924,10 @@ video {
   --tw-bg-opacity: 0.6;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -885,6 +958,11 @@ video {
   padding-right: 26px;
 }
 
+.px-\[29px\] {
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
 .px-\[43px\] {
   padding-left: 43px;
   padding-right: 43px;
@@ -908,6 +986,11 @@ video {
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.py-\[17px\] {
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .py-\[22px\] {
@@ -959,6 +1042,10 @@ video {
 
 .pt-\[52px\] {
   padding-top: 52px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-inter {
@@ -1020,6 +1107,14 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[38px\] {
+  font-size: 38px;
+}
+
+.text-\[62\.241px\] {
+  font-size: 62.241px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1040,8 +1135,21 @@ video {
   line-height: 63px;
 }
 
+.tracking-\[4\.8px\] {
+  letter-spacing: 4.8px;
+}
+
 .tracking-\[9\.275px\] {
   letter-spacing: 9.275px;
+}
+
+.tracking-\[16\.5px\] {
+  letter-spacing: 16.5px;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-review {
@@ -1057,6 +1165,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#888888\] {
+  --tw-text-opacity: 1;
+  color: rgb(136 136 136 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -1182,6 +1295,48 @@ video:hover, video:focus {
   background: rgba(33, 33, 33, 0.49);
   -webkit-backdrop-filter: blur(16.5px);
           backdrop-filter: blur(16.5px);
+}
+
+.contact-email {
+  background: linear-gradient(90deg, #F3B5FD -6.55%, #B18CFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-button {
+  background: linear-gradient(93deg, #FFB8FC -16.36%, #B5A3FF 120.53%);
+}
+
+/* Contact Background Custom */
+
+.black-gradient {
+  width: 588px;
+  height: 100%;
+  background: linear-gradient(90deg, #000 27.08%, rgba(255, 255, 255, 0.00) 100%);
+  top: 0;
+  right: 196px;
+  z-index: 1;
+}
+
+.map {
+  background-image: url(../dist/images/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 683px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+/* Social Icon Button */
+
+.social-icon {
+  width: 52.92px;
+  height: 52.92px;
+  flex-shrink: 0;
+  border-radius: 28.899px;
+  background: linear-gradient(180deg, rgba(243, 151, 255, 0.50) 0%, rgba(165, 107, 240, 0.50) 100%);
 }
 
 .placeholder\:text-center::-moz-placeholder {
