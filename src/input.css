@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .searchBar {
@@ -151,7 +152,7 @@ video::-webkit-media-controls {
     opacity: 0;
   }
 video:hover, video:focus {
-    transform: scale(1.35);
+    @apply scale-125 lg:scale-[1.35];
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
