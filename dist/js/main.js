@@ -173,4 +173,4 @@ bottomB.fromTo('.b-bar', {scale:0}, {scale:1, duration:1.5});
 bottomL.fromTo('.b-logo', {x:-100, opacity:0}, {x:0, opacity:1, duration:1.5});
 bottomT.fromTo('.b-title', {scale:0, opacity:0}, {scale:1, opacity:1, duration:1.5});
 bottomI.fromTo('.b-icon', {x:100, opacity:0}, {x:0, opacity:1, duration:1.5});
-foot.fromTo('footer', {y:100, opacity:0}, {y:0, opacity:1, duration:2});
+foot.fromTo('footer', {opacity:0}, {opacity:1, duration:2});
