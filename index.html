@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Teko&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -87,10 +89,10 @@
             </div>
             <!-- End of Navigation -->
             <!-- Front -->
-            <section id="home">
+            <section id="home" class="opacity-0">
                 <div class="flex flex-wrap rounded-[26px] overflow-hidden front-main-box relative">
                     <div class="w-full self-end px-[43px] py-[45px] z-10 lg:w-1/2 ">
-                        <div class="mb-14 md:mb-[236px]">
+                        <div class="mb-14 md:mb-[236px] opacity-0 title">
                             <h1 class="text-title leading-[63px]">
                                 We Help You To<br>Make A <span class="font-bold cursor-grab hover:text-[#8c509b]">Dream Home</span>
                             </h1>
@@ -98,13 +100,13 @@
                                 Trusted Source Of Bulid Your Home
                             </p>
                         </div>
-                        <a href="" class="block w-fit py-7 px-9 rounded-3xl btn">
+                        <a href="" class="block w-fit py-7 px-9 rounded-3xl opacity-0 btn">
                             <span class="text-2xl font-semibold leading-6 front-button-text">
                                 Start and Explore now
                             </span>
                         </a>
                     </div>
-                    <div class="w-full self-end md:mt-[102px] z-10 lg:w-1/2">
+                    <div class="w-full self-end md:mt-[102px] z-10 lg:w-1/2 opacity-0 front-img">
                         <img src="dist/images/1.png" alt="Building images" class="w-full">
                     </div>
                     <div class="absolute main-circle1 animate-pulse"></div>
@@ -117,7 +119,7 @@
     <!-- End of Header -->
 
     <!-- Review -->
-    <section class="py-resosec md:py-section">
+    <section class="py-resosec md:py-section opacity-0 review">
         <div class="container px-10">
             <div class="text-center lg:text-start lg:flex flex-wrap justify-between">
                 <div class="px-4">
@@ -158,7 +160,7 @@
     <!-- Preview -->
     <section id="preview" class="py-resosec md:py-section">
         <div class="container px-14">
-            <div class="w-full mb-[60px]">
+            <div class="w-full mb-[60px] opacity-0 preview-title">
                 <div class="flex">
                     <h2 class="text-title font-bold title-preview pr-9">
                         Preview
@@ -170,7 +172,7 @@
             </div>
             <div class="w-full">
                 <!-- Videos -->
-                <div class="flex">
+                <div class="flex opacity-0 preview-videos">
                     <ul class="grid grid-flow-row lg:grid-flow-col">
                         <li class="col-auto">
                             <div class="lg:h-[309px]">
@@ -202,10 +204,10 @@
     <!-- End of Preview -->
 
     <!-- Services -->
-    <section id="services" class="my-resosec md:my-section lg:py-36 bg-black relative overflow-hidden">
+    <section id="services" class="my-resosec md:my-section lg:py-36 bg-black relative overflow-hidden opacity-0 service-bg">
         <div class="container px-14 lg:pl-14 ">
             <div class="flex flex-wrap">
-                <div class="w-full lg:w-1/2 my-16 z-20">
+                <div class="w-full lg:w-1/2 my-16 z-20 opacity-0 service-box">
                     <div class="lg:mr-36">
                         <h2 class="text-title font-bold title-preview mb-8">
                             Services
@@ -279,13 +281,13 @@
     <!-- Testimonial -->
     <section id="testimonial" class="py-resosec md:py-section">
         <div class="container px-14">
-            <div class="w-full">
+            <div class="w-full opacity-0 testi-title">
                 <h2 class="text-title font-bold">
                     Testimonial
                 </h2>
             </div>
             <div class="flex justify-between flex-wrap">
-                <div class="w-full lg:w-2/5 mt-7 lg:mt-section">
+                <div class="w-full lg:w-2/5 mt-7 lg:mt-section opacity-0 testi-box">
                     <h4 class="text-3xl font-medium mb-[14px]">
                         The Service is worth price and i’m really enjoy it.
                     </h4>
@@ -304,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full hidden lg:block lg:w-2/5 mt-7 lg:mt-section">
+                <div class="w-full hidden lg:block lg:w-2/5 mt-7 lg:mt-section opacity-0 testi-box2">
                     <h4 class="text-3xl font-medium mb-[14px]">
                         The Service is worth price and i’m really enjoy it.
                     </h4>
@@ -327,10 +329,10 @@
             <div class="flex justify-between flex-wrap mt-section">
                 <div class="w-full">
                     <div class="block md:flex text-[25px] font-medium gap-[18px]">
-                        <p class="py-[10px] px-[17px]">
+                        <p class="py-[10px] px-[17px] opacity-0 testi-box2">
                             12,000 Testimonials
                         </p>
-                        <a href="" class="flex justify-between items-center w-fit gap-5  py-[10px] pl-6 pr-[17px] rounded-[51px] testi-button hover:brightness-95 hover:hue-rotate-30 transition duration-300">
+                        <a href="" class="flex justify-between items-center w-fit gap-5  py-[10px] pl-6 pr-[17px] rounded-[51px] testi-button hover:brightness-95 hover:hue-rotate-30 transition duration-300 opacity-0">
                             Read more
                             <svg class="inline flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
                                 <path d="M14.5 0.5C11.6322 0.5 8.82875 1.35041 6.44424 2.94369C4.05972 4.53697 2.20122 6.80156 1.10375 9.45109C0.00628262 12.1006 -0.280866 15.0161 0.27862 17.8288C0.838105 20.6415 2.2191 23.2252 4.24696 25.253C6.27482 27.2809 8.85847 28.6619 11.6712 29.2214C14.4839 29.7809 17.3994 29.4937 20.0489 28.3962C22.6984 27.2988 24.963 25.4403 26.5563 23.0558C28.1496 20.6712 29 17.8678 29 15C28.9959 11.1556 27.467 7.46983 24.7486 4.75143C22.0302 2.03304 18.3444 0.50406 14.5 0.5ZM20.0769 17.2308C20.0769 17.5266 19.9594 17.8103 19.7502 18.0195C19.5411 18.2286 19.2574 18.3461 18.9615 18.3461C18.6657 18.3461 18.382 18.2286 18.1728 18.0195C17.9637 17.8103 17.8462 17.5266 17.8462 17.2308V13.2307L10.8276 20.2507C10.724 20.3543 10.6009 20.4365 10.4655 20.4926C10.3301 20.5487 10.185 20.5775 10.0385 20.5775C9.89191 20.5775 9.74679 20.5487 9.61139 20.4926C9.47599 20.4365 9.35296 20.3543 9.24933 20.2507C9.1457 20.147 9.0635 20.024 9.00741 19.8886C8.95133 19.7532 8.92246 19.6081 8.92246 19.4615C8.92246 19.315 8.95133 19.1699 9.00741 19.0345C9.0635 18.8991 9.1457 18.776 9.24933 18.6724L16.2693 11.6538H12.2692C11.9734 11.6538 11.6897 11.5363 11.4805 11.3272C11.2714 11.118 11.1538 10.8343 11.1538 10.5385C11.1538 10.2426 11.2714 9.95894 11.4805 9.74976C11.6897 9.54059 11.9734 9.42307 12.2692 9.42307H18.9615C19.2574 9.42307 19.5411 9.54059 19.7502 9.74976C19.9594 9.95894 20.0769 10.2426 20.0769 10.5385V17.2308Z" fill="black"/>
