@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .searchBar {
@@ -51,17 +54,17 @@ nav ul {
 .burger {
     @apply block lg:hidden cursor-pointer z-[99] fixed top-5 md:top-[55px] right-[35px];
 }
-    .toggle-burger .line-1 {
-        transform: rotate(45deg);
-    }
-    .toggle-burger .line-2 {
-        opacity: 0;
-    }
-    .toggle-burger .line-3 {
-        width: 34px;
-        @apply ml-[7px] origin-bottom-left;
-        transform: rotate(-45deg);
-    }
+.toggle-burger .line-1 {
+    transform: rotate(45deg);
+}
+.toggle-burger .line-2 {
+    opacity: 0;
+}
+.toggle-burger .line-3 {
+    width: 34px;
+    @apply ml-[7px] origin-bottom-left;
+    transform: rotate(-45deg);
+}
 
 /* DropDown */
 
@@ -100,12 +103,55 @@ nav ul {
 .front-main-box {
     background: #EBE1FF;
 }
-
-.front-main-button {
+.front-button-text {
     background: linear-gradient(90deg, #D96BFF -15.36%, #FF96E2 105.12%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.btn:hover .front-button-text {
+    background: linear-gradient(90deg, #5f317e -15.36%, #db209d 105.12%);
+    background-clip: text;
+}
+.btn {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 17px;
+    transition: all 0.3s;
+}
+.btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 10px double rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    transform: scale(1.2,1.2);
+}
+.btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
 }
 
 .main-circle1 {
