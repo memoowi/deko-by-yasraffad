@@ -17,7 +17,15 @@ module.exports = {
       colors: {
         review: '#909090',
         service: '#D4D4D4',
-      }
+      },
+      padding: {
+        section : '52px',
+        resosec : '20px',
+      },
+      margin: {
+        section: '52px',
+        resosec: '20px',
+      },
     },
   },
   plugins: [],

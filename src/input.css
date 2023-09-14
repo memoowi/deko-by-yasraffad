@@ -48,7 +48,7 @@ nav ul {
 }
 
 .burger {
-    @apply block lg:hidden cursor-pointer z-[99] fixed top-[55px] right-[35px];
+    @apply block lg:hidden cursor-pointer z-[99] fixed top-5 md:top-[55px] right-[35px];
 }
     .toggle-burger .line-1 {
         transform: rotate(45deg);
