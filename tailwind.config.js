@@ -26,6 +26,12 @@ module.exports = {
         section: '52px',
         resosec: '20px',
       },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+        'spin-slow2': 'spin 12s linear infinite',
+        'spin-slow3': 'spin 8s linear infinite',
+        'spin-slow4': 'spin 14s linear infinite',
+      },
     },
   },
   plugins: [],
