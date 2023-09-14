@@ -17,7 +17,7 @@ const timeLine = gsap.timeline({defaults: {duration: 1}})
 const reviewA = gsap.timeline({
     scrollTrigger: {
       trigger: ".review",
-      start: "top center",
+      start: "top bottom",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -41,7 +41,7 @@ const previewV = gsap.timeline({
 const serviceT = gsap.timeline({
     scrollTrigger: {
       trigger: ".service-bg",
-      start: "top bottom",
+      start: "top center",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -86,6 +86,70 @@ const testiB3 = gsap.timeline({
       toggleActions: "play none none reverse",
     },
 });
+const contactB = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".contact-bg",
+      start: "center bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const contactB2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".contact-box",
+      start: "center bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const contactB3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".map",
+      start: "center bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const bottomB = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".b-bar",
+      start: "top bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const bottomL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".b-logo",
+      start: "top bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const bottomT = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".b-title",
+      start: "top bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const bottomI = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".b-icon",
+      start: "top bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
+const foot = gsap.timeline({
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top bottom",
+      end: "bottom bottom",
+      toggleActions: "play none none reverse",
+    },
+});
 
 timeLine.fromTo('#home', {scale:0.8}, {scale:1, opacity:1, delay:0.3})
 timeLine.fromTo('.title', {y:100}, {y:0, opacity:1})
@@ -99,7 +163,15 @@ serviceB.fromTo('.service-box', {x:-200}, {x:0, opacity:1, duration:1, delay:0.5
 testiT.fromTo('.testi-title', {x:-200}, {x:0, opacity:1, duration:1.8})
 testiB.fromTo('.testi-box', {y:150}, {y:0, opacity:1, duration:1})
 testiB2.fromTo('.testi-box2', {y:150}, {y:0, opacity:1, duration:1, delay:0.5})
-testiB3.fromTo('.testi-button', {y:200}, {y:0, opacity:1, duration:1, delay:0.3})
+testiB3.fromTo('.testi-button', {scale:0.5}, {scale:1, opacity:1, duration:0.5, delay:0.8})
+contactB.fromTo('.contact-bg', {y:200}, {y:0, opacity:1, duration:1.2, delay:0.3})
+contactB3.fromTo('.map', {opacity:0}, {opacity:1, duration:1, delay:1.2})
+contactB2.fromTo('.contact-box', {x:500}, {x:0, opacity:1, duration:1, delay:1})
+bottomB.fromTo('.b-bar', {scale:0}, {scale:1, duration:1.5})
+bottomL.fromTo('.b-logo', {x:-100, opacity:0}, {x:0, opacity:1, duration:1.5})
+bottomT.fromTo('.b-title', {scale:0, opacity:0}, {scale:1, opacity:1, duration:1.5})
+bottomI.fromTo('.b-icon', {x:100, opacity:0}, {x:0, opacity:1, duration:1.5})
+foot.fromTo('footer', {y:100, opacity:0}, {y:0, opacity:1, duration:2})
 
 
   
