@@ -13,6 +13,8 @@ function navSlide() {
 
 navSlide();
 
+// Animations Halaman Utama and Scroll Trigger Animate
+
 const timeLine = gsap.timeline({defaults: {duration: 1}})
 const reviewA = gsap.timeline({
     scrollTrigger: {
