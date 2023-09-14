@@ -151,30 +151,24 @@ const foot = gsap.timeline({
     },
 });
 
-timeLine.fromTo('#home', {scale:0.8}, {scale:1, opacity:1, delay:0.3})
-timeLine.fromTo('.title', {y:100}, {y:0, opacity:1})
-timeLine.fromTo('.front-img', {y:100}, {y:0, opacity:1})
-timeLine.fromTo('.btn', {y:100}, {y:0, opacity:1, delay:-0.9})
-reviewA.fromTo('.review', {y:100}, {y:0, opacity:1})
-previewT.fromTo('.preview-title', {x:-200}, {x:0, opacity:1, duration:1.8})
-previewV.fromTo('.preview-videos', {y:100}, {y:0, opacity:1, duration:1.5})
-serviceT.fromTo('.service-bg', {y:0}, {y:0, opacity:1, duration:1.8})
-serviceB.fromTo('.service-box', {x:-200}, {x:0, opacity:1, duration:1, delay:0.5})
-testiT.fromTo('.testi-title', {x:-200}, {x:0, opacity:1, duration:1.8})
-testiB.fromTo('.testi-box', {y:150}, {y:0, opacity:1, duration:1})
-testiB2.fromTo('.testi-box2', {y:150}, {y:0, opacity:1, duration:1, delay:0.5})
-testiB3.fromTo('.testi-button', {scale:0.5}, {scale:1, opacity:1, duration:0.5, delay:0.8})
-contactB.fromTo('.contact-bg', {y:200}, {y:0, opacity:1, duration:1.2, delay:0.3})
-contactB3.fromTo('.map', {opacity:0}, {opacity:1, duration:1, delay:1.2})
-contactB2.fromTo('.contact-box', {x:500}, {x:0, opacity:1, duration:1, delay:1})
-bottomB.fromTo('.b-bar', {scale:0}, {scale:1, duration:1.5})
-bottomL.fromTo('.b-logo', {x:-100, opacity:0}, {x:0, opacity:1, duration:1.5})
-bottomT.fromTo('.b-title', {scale:0, opacity:0}, {scale:1, opacity:1, duration:1.5})
-bottomI.fromTo('.b-icon', {x:100, opacity:0}, {x:0, opacity:1, duration:1.5})
-foot.fromTo('footer', {y:100, opacity:0}, {y:0, opacity:1, duration:2})
-
-
-  
-  
-
-  
+timeLine.fromTo('#home', {scale:0.8}, {scale:1, opacity:1, delay:0.3});
+timeLine.fromTo('.title', {y:100}, {y:0, opacity:1});
+timeLine.fromTo('.front-img', {y:100}, {y:0, opacity:1});
+timeLine.fromTo('.btn', {y:100}, {y:0, opacity:1, delay:-0.9});
+reviewA.fromTo('.review', {y:100}, {y:0, opacity:1});
+previewT.fromTo('.preview-title', {x:-200}, {x:0, opacity:1, duration:1.8});
+previewV.fromTo('.preview-videos', {y:100}, {y:0, opacity:1, duration:1.5});
+serviceT.fromTo('.service-bg', {y:0}, {y:0, opacity:1, duration:1.8});
+serviceB.fromTo('.service-box', {x:-200}, {x:0, opacity:1, duration:1, delay:0.5});
+testiT.fromTo('.testi-title', {x:-200}, {x:0, opacity:1, duration:1.8});
+testiB.fromTo('.testi-box', {y:150}, {y:0, opacity:1, duration:1});
+testiB2.fromTo('.testi-box2', {y:150}, {y:0, opacity:1, duration:1, delay:0.5});
+testiB3.fromTo('.testi-button', {scale:0.5}, {scale:1, opacity:1, duration:0.5, delay:0.8});
+contactB.fromTo('.contact-bg', {y:200}, {y:0, opacity:1, duration:1.2, delay:0.3});
+contactB3.fromTo('.map', {opacity:0}, {opacity:1, duration:1, delay:1.2});
+contactB2.fromTo('.contact-box', {x:500}, {x:0, opacity:1, duration:1, delay:1});
+bottomB.fromTo('.b-bar', {scale:0}, {scale:1, duration:1.5});
+bottomL.fromTo('.b-logo', {x:-100, opacity:0}, {x:0, opacity:1, duration:1.5});
+bottomT.fromTo('.b-title', {scale:0, opacity:0}, {scale:1, opacity:1, duration:1.5});
+bottomI.fromTo('.b-icon', {x:100, opacity:0}, {x:0, opacity:1, duration:1.5});
+foot.fromTo('footer', {y:100, opacity:0}, {y:0, opacity:1, duration:2});
